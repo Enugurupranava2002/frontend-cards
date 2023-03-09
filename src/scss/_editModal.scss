@@ -1,0 +1,62 @@
+.darkBackGround {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100rem;
+  height: 100rem;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  background-repeat: repeat-y;
+}
+
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 40%;
+  opacity: 1;
+  z-index: 3;
+
+  &-header {
+    height: 50px;
+    background: white;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  h5 {
+    margin: 0;
+    padding-top: 10px;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &-info {
+    margin: 1rem;
+  }
+
+  &-content {
+    padding: 10px;
+    font-size: 14px;
+    color: #2c3e50;
+    text-align: center;
+  }
+
+  &-actions {
+    margin-right: 0.5rem;
+    bottom: 2px;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    gap: 1rem;
+    button {
+      margin-bottom: 1rem;
+    }
+  }
+}

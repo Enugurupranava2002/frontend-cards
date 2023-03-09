@@ -1,0 +1,26 @@
+.historyItem {
+  cursor: pointer;
+
+  &__container {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      margin-right: 1rem;
+    }
+
+    &:last-of-type {
+      margin-right: 0.7rem;
+    }
+  }
+}
+
+.link {
+  color: rgba(128, 0, 128, 0.749);
+}
+
+.name {
+  color: rgb(128, 0, 128);
+}

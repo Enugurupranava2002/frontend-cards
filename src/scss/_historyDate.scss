@@ -1,0 +1,26 @@
+.history-date {
+  display: flex;
+  flex-direction: column;
+  width: 5.5rem;
+  height: 4rem;
+  border: 1px solid #ececec;
+  background-color: rgba(128, 0, 128, 0.562);
+  color: white;
+  border-radius: 10px 0 0 10px;
+  align-items: center;
+  justify-content: center;
+
+  &__month {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  &__year {
+    font-size: 0.75rem;
+  }
+
+  &__day {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

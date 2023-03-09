@@ -1,0 +1,131 @@
+.confirmation__container {
+  //   padding: 2rem;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  padding-top: 1.5rem;
+
+  &-logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 10rem;
+    height: 10rem;
+    z-index: 2;
+    &__horz {
+      margin-top: 1rem;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      border: rgba(128, 0, 128, 0.676) 2px solid;
+      border-radius: 10px;
+      height: 3rem;
+      width: 8rem;
+    }
+    &__vert {
+      margin-top: 1rem;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      border-end-end-radius: 10px;
+      border-end-start-radius: 10px;
+      border: rgba(128, 0, 128, 0.676) 2px solid;
+      width: 3rem;
+      height: 8rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover > &__horz {
+      animation-name: horz;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+
+    &:hover > &__vert {
+      animation-name: vert;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  &-info {
+    position: relative;
+    top: 60%;
+
+    &__message {
+      font-size: 25px;
+      margin-bottom: 2rem;
+    }
+
+    &__link {
+      color: skyblue;
+      border: white;
+      text-decoration: underline;
+      padding: 0;
+      margin: 0;
+      width: 50px;
+    }
+  }
+}
+
+.error__container {
+  text-align: center;
+  padding: 1rem;
+
+  &-heading {
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+  }
+
+  &-info {
+    position: relative;
+
+    &__message {
+      font-size: 20px;
+      margin-bottom: 1rem;
+    }
+
+    &__link {
+      color: skyblue;
+      border: white;
+      text-decoration: underline;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+@keyframes vert {
+  from {
+    width: 3rem;
+    height: 8rem;
+  }
+  to {
+    width: 8rem;
+    height: 3rem;
+    border-start-end-radius: 10px;
+    border-start-start-radius: 10px;
+  }
+}
+
+@keyframes horz {
+  from {
+    width: 8rem;
+    height: 3rem;
+  }
+  to {
+    border-start-end-radius: 0px;
+    border-start-start-radius: 0px;
+    width: 3rem;
+    height: 8rem;
+  }
+}

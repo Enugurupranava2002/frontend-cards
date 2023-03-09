@@ -1,0 +1,19 @@
+.cartItem {
+  width: 4rem;
+  cursor: pointer;
+
+  &__container {
+    margin: 1.5rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cartItem {
+    position: absolute;
+    left: 25%;
+  }
+}

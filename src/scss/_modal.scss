@@ -1,0 +1,100 @@
+.modal_backdrop {
+  background: rgba(109, 106, 106, 0.521);
+  z-index: 2;
+  width: 100rem;
+  height: 100rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  background-repeat: repeat-y;
+}
+
+.modal {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+
+  &-container {
+    text-align: center;
+    margin: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &__body {
+      min-width: 10rem;
+    }
+
+    &__close {
+      border: 2px solid red;
+      border-radius: 15px;
+      position: absolute;
+      right: -1rem;
+      top: 0rem;
+      padding: 0.5rem;
+      background-color: rgba(255, 0, 0, 0.694);
+      color: white;
+    }
+
+    &__close:hover,
+    &__close:active {
+      background-color: red;
+      cursor: pointer;
+      transform: translateY(-2px);
+      box-shadow: 2px 2px rgba(102, 102, 102, 0.416);
+    }
+
+    &__heading {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      right: 0%;
+      margin: 0;
+      padding: 0;
+      margin-left: auto;
+      width: 40%;
+      padding: 0.2rem;
+      font-size: 15px;
+      background-color: rgba(255, 0, 0, 0.603);
+      border-color: rgba(255, 0, 0, 0.603);
+    }
+
+    button:hover,
+    button:active {
+      background-color: red;
+      border-color: red;
+      cursor: pointer;
+      transform: translateY(-2px);
+      box-shadow: 2px 2px rgba(102, 102, 102, 0.416);
+    }
+  }
+}
+
+.vedio {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border: 2px solid rgba(128, 0, 128, 0.562);
+  border-radius: 10px;
+}
+
+.vedio-actions {
+  position: relative;
+  right: -75%;
+  button {
+    margin: 0;
+    padding: 0.5rem;
+    width: 5rem;
+  }
+}

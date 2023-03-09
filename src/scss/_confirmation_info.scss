@@ -1,0 +1,37 @@
+.confirmation_info {
+  padding: 1rem;
+  width: 30rem;
+  height: 15rem;
+  text-align: center;
+
+  &-icon {
+    .material-icons {
+      font-size: 30px;
+      color: rgba(128, 0, 128, 0.507);
+    }
+  }
+
+  &-message {
+    font-size: 20px;
+    margin-top: 1rem;
+    h2 {
+      display: inline;
+    }
+  }
+
+  &-info {
+    margin-top: 1rem;
+    p {
+      font-size: 17px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &-link {
+    position: relative;
+    color: skyblue;
+    text-decoration: underline;
+    top: 15%;
+  }
+}

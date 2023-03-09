@@ -1,0 +1,30 @@
+.cardList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  &__li {
+    display: inline-block;
+    margin: 10px 0 0 2%;
+    flex-grow: 1;
+    height: 100px;
+    width: calc(100% * (1 / 3) - 10px - 1px);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .cardList__li {
+    width: calc(100% * (1 / 4) - 10px - 1px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cardList {
+    &__li {
+      width: calc(100%);
+    }
+  }
+}
