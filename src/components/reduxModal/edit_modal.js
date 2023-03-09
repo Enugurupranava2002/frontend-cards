@@ -6,11 +6,13 @@ import "../../dist/css/main.css";
 import Card from "../../ui/card";
 import FormBody from "../../components/addCard/formBody";
 import LoadingSpinner from "../../ui/LoadingSpinner";
+import { useNavigate } from "react-router-dom";
 
 const EditModal = (props) => {
   const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(false);
   const [cardData, setCardData] = useState({});
+  const navigate = useNavigate();
 
   const closeEditModal = () => {
     dispatch(modalActions.showEditWindow(false));
@@ -92,6 +94,7 @@ const EditModal = (props) => {
         console.log(resData);
         setIsLoading(false);
         dispatch(modalActions.showEditWindow(false));
+        navigate("/postLoginPage");
         nameRef.current.value = null;
         catRef.current.value = null;
         srcRef.current.value = null;

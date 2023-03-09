@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Navigate, redirect, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import "./dist/css/main.css";
 import Signup from "./pages/Auth/Signup";
