@@ -1,11 +1,5 @@
-import { Fragment, useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Modal from "../../components/modal/modal";
-
-import NavBar from "../../components/navBar/navBar";
-import { authActions } from "../../store/auth-slice";
-import LoadingSpinner from "../../ui/LoadingSpinner";
 import CategoryList from "../../components/categories/categoryList";
 
 const PostLoginPage = () => {

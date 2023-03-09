@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +10,6 @@ const AppWrapper = () => {
   const showDeleteConfirmModal = useSelector(
     (state) => state.modal.showDeleteConfirmModal
   );
-  console.log("In app wrapper", showEditModal, showDeleteConfirmModal);
   return (
     <App
       navigate={navigate}

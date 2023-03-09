@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import Modal from "../../components/modal/modal";
-import CardItem from "../../components/card/cardItem";
 import CardsList from "../../components/card/cardList";
 import { useDispatch, useSelector } from "react-redux";
 import LoadingSpinner from "../../ui/LoadingSpinner";

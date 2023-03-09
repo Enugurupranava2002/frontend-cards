@@ -1,6 +1,5 @@
-import { useRef, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 
 import { modalActions } from "../../store/modal-slice";
 import { dataActions } from "../../store/data-slice";

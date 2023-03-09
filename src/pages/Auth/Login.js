@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useStateMachineInput } from "rive-react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import Input from "../../components/auth/input";
 import { required, length } from "../../util/validators";

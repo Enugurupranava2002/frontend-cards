@@ -1,8 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import Webcam from "react-webcam";
-import FormCard from "../../pages/Auth/FormCard";
 import Card from "../../ui/card";
-import LoadingSpinner from "../../ui/LoadingSpinner";
 
 const VedioModal = (props) => {
   return (

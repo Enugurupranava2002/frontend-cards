@@ -1,7 +1,3 @@
-import { useSelector } from "react-redux";
-
-import Card from "../../ui/card";
-
 const FormBody = (props) => {
   return (
     <div className="new-card__controls">

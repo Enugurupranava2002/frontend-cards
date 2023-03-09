@@ -1,44 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// data: [
-//     {
-//       key: "1",
-//       name: "abcd",
-//       source: "https://www.youtube.com/watch?v=-K8HP_XKXtk",
-//       bucket: "Education",
-//     },
-//     {
-//       key: "2",
-//       name: "123",
-//       source: "https://www.youtube.com/watch?v=EfdJlfYDBp8",
-//       bucket: "School",
-//     },
-//     {
-//       key: "3",
-//       name: "1",
-//       source: "https://www.youtube.com/watch?v=-K8HP_XKXtk",
-//       bucket: "Business",
-//     },
-//     {
-//       key: "4",
-//       name: "2",
-//       source: "https://www.youtube.com/watch?v=l0bpy857deM",
-//       bucket: "Agriculture",
-//     },
-//     {
-//       key: "5",
-//       name: "a12",
-//       source: "https://www.youtube.com/watch?v=ha4tRQwKIUg",
-//       bucket: "Shop",
-//     },
-//     {
-//       key: "6",
-//       name: "a231",
-//       source: "https://www.youtube.com/embed/G8csJtDwjzk",
-//       bucket: "College",
-//     },
-//   ],
-
 const initDataState = {
   deleteDataIds: [],
   historyDataIds: [],
