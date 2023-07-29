@@ -132,14 +132,19 @@ const Login = (props) => {
       `,
     };
 
-    fetch("https://example-service-name-backend-cards.onrender.com/graphql", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(graphqlQuery),
-      credentials: "include",
-    })
+    fetch(
+      process.env.NODE_ENV === "development"
+        ? process.env.REACT_APP_API_DEVELOPMENT
+        : process.env.REACT_APP_API_PRODUCTION,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(graphqlQuery),
+        credentials: "include",
+      }
+    )
       .then((res) => {
         return res.json();
       })

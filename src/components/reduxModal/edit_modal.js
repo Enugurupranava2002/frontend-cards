@@ -42,13 +42,18 @@ const EditModal = (props) => {
       `,
     };
 
-    fetch("https://example-service-name-backend-cards.onrender.com/graphql", {
-      method: "POST",
-      headers: {
-        "content-Type": "application/json",
-      },
-      body: JSON.stringify(graphqlQuery),
-    })
+    fetch(
+      process.env.NODE_ENV === "development"
+        ? process.env.REACT_APP_API_DEVELOPMENT
+        : process.env.REACT_APP_API_PRODUCTION,
+      {
+        method: "POST",
+        headers: {
+          "content-Type": "application/json",
+        },
+        body: JSON.stringify(graphqlQuery),
+      }
+    )
       .then((res) => res.json())
       .then((resData) => {
         if (resData.errors) {
@@ -79,13 +84,18 @@ const EditModal = (props) => {
 
     setIsLoading(true);
 
-    fetch("https://example-service-name-backend-cards.onrender.com/graphql", {
-      method: "POST",
-      headers: {
-        "content-Type": "application/json",
-      },
-      body: JSON.stringify(graphqlQuery),
-    })
+    fetch(
+      process.env.NODE_ENV === "development"
+        ? process.env.REACT_APP_API_DEVELOPMENT
+        : process.env.REACT_APP_API_PRODUCTION,
+      {
+        method: "POST",
+        headers: {
+          "content-Type": "application/json",
+        },
+        body: JSON.stringify(graphqlQuery),
+      }
+    )
       .then((res) => res.json())
       .then((resData) => {
         if (resData.errors) {
